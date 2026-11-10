@@ -36,3 +36,5 @@ Thumbs.db
 # Backup and temporary files
 *.backup
 test_failures.txt
+
+database/db_sqlite_backup.py
