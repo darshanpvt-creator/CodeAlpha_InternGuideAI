@@ -1,0 +1,8 @@
+{
+    "total_tests": 10,
+    "correct_predictions": 10,
+    "overall_accuracy_percent": 100.0,
+    "faq_matching_rate_percent": 100.0,
+    "unrelated_query_rejection_percent": 100.0,
+    "average_confidence": 0.4996
+}

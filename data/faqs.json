@@ -1,0 +1,341 @@
+[
+  {
+    "id": 1,
+    "category": "Internships",
+    "question": "What is an internship?",
+    "variations": [
+      "Explain internship",
+      "What do interns do?",
+      "Why should students do internships?"
+    ],
+    "answer": "An internship is a short-term professional experience where students gain practical skills by working on real-world tasks. It helps students understand industry practices and build professional experience.",
+    "tags": [
+      "internship",
+      "experience",
+      "students"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Eligibility",
+    "question": "Who can apply for internships?",
+    "variations": [
+      "Can college students apply?",
+      "Am I eligible for an internship?",
+      "Who is eligible?"
+    ],
+    "answer": "Eligibility depends on the organization and role. Many internships accept undergraduate students, while some require specific technical skills, academic backgrounds, or prior experience. Always check the official eligibility criteria.",
+    "tags": [
+      "eligibility",
+      "college",
+      "students"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Applications",
+    "question": "How can I find an internship?",
+    "variations": [
+      "Where can I search for internships?",
+      "How do I get an internship?",
+      "Best ways to find internships"
+    ],
+    "answer": "You can find internships through company career pages, LinkedIn, university placement cells, professional communities, and verified internship platforms. Prepare a strong resume and apply for roles that match your skills.",
+    "tags": [
+      "search",
+      "application",
+      "internship"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Resume",
+    "question": "What should a student include in a resume?",
+    "variations": [
+      "How do I prepare my resume?",
+      "What skills should I add to my CV?",
+      "What makes a good student resume?"
+    ],
+    "answer": "A student resume should include contact details, education, technical skills, projects, certifications, achievements, and relevant experience. Keep it clear, accurate, concise, and tailored to the internship.",
+    "tags": [
+      "resume",
+      "CV",
+      "skills"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Skills",
+    "question": "Which technical skills should CSE students learn?",
+    "variations": [
+      "What skills are important for computer science students?",
+      "Which programming languages should I learn?",
+      "What should a CSE student study?"
+    ],
+    "answer": "CSE students should develop programming fundamentals, data structures and algorithms, databases, operating systems, computer networks, and software development skills. Python, Java, C++, and JavaScript are useful depending on your career goals.",
+    "tags": [
+      "CSE",
+      "programming",
+      "technical skills"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Projects",
+    "question": "Why are projects important for students?",
+    "variations": [
+      "How do projects help my career?",
+      "Should I build projects for internships?",
+      "Why do recruiters ask about projects?",
+      "Do projects help me get internships?",
+      "Can projects improve my internship chances?",
+      "Why do companies value student projects?",
+      "Will building projects help my career?"
+    ],
+    "answer": "Projects demonstrate your ability to apply technical knowledge to practical problems. They help recruiters evaluate your skills, creativity, and problem-solving approach. Maintain your work on GitHub with clear documentation.",
+    "tags": [
+      "projects",
+      "GitHub",
+      "portfolio"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "GitHub",
+    "question": "How should I use GitHub as a student?",
+    "variations": [
+      "Why is GitHub important?",
+      "How do I create a coding portfolio?",
+      "What should I upload to GitHub?",
+      "How can I showcase my coding projects?",
+      "How do I display my programming work?",
+      "How can I build an online coding portfolio?",
+      "How can I show recruiters my projects?"
+    ],
+    "answer": "Use GitHub to store source code, track changes, collaborate, and showcase projects. Write meaningful README files, organize repositories, and never upload passwords or API keys.",
+    "tags": [
+      "GitHub",
+      "portfolio",
+      "coding"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Interview Preparation",
+    "question": "How should I prepare for a technical interview?",
+    "variations": [
+      "How do I prepare for coding interviews?",
+      "What should I study before an interview?",
+      "How can I improve my interview skills?"
+    ],
+    "answer": "Revise programming fundamentals, data structures, algorithms, object-oriented programming, databases, and your own projects. Practice coding problems and explain your approach clearly.",
+    "tags": [
+      "interview",
+      "coding",
+      "preparation"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Certificates",
+    "question": "Are online certificates useful for students?",
+    "variations": [
+      "Do certificates help in getting internships?",
+      "Should I complete online courses?",
+      "Are course certificates valuable?"
+    ],
+    "answer": "Certificates can demonstrate initiative and structured learning, especially when issued by credible providers. However, practical skills, projects, and the ability to explain what you learned are generally more important than collecting certificates.",
+    "tags": [
+      "certificates",
+      "courses",
+      "learning"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Career Guidance",
+    "question": "How can I become a software developer?",
+    "variations": [
+      "What is the roadmap to become a developer?",
+      "How do I start a software engineering career?",
+      "What should I learn to become a programmer?"
+    ],
+    "answer": "Start with one programming language, strengthen data structures and algorithms, learn core computer science concepts, build practical projects, use Git, and practice technical interviews. Apply for internships to gain professional experience.",
+    "tags": [
+      "software developer",
+      "career",
+      "roadmap"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Submissions",
+    "question": "How should I submit an internship project?",
+    "variations": [
+      "How do I submit my project?",
+      "What should a project submission contain?",
+      "How can I share my completed work?"
+    ],
+    "answer": "Follow the organization's official submission instructions. Typically, prepare your source code, a clear README, screenshots or a demo, and the required repository or submission link. Verify that all links work before submitting.",
+    "tags": [
+      "submission",
+      "project",
+      "GitHub"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Internship Experience",
+    "question": "What should I do during an internship?",
+    "variations": [
+      "How can I perform well as an intern?",
+      "What are the responsibilities of an intern?",
+      "How do I make the most of an internship?"
+    ],
+    "answer": "Understand your assigned tasks, communicate with your mentor, meet deadlines, document your progress, ask relevant questions, and actively apply feedback. Focus on learning and delivering quality work.",
+    "tags": [
+      "intern",
+      "responsibilities",
+      "performance"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Productivity",
+    "question": "How can I balance college and internship work?",
+    "variations": [
+      "How do I manage studies and internships?",
+      "How can I improve time management?",
+      "How should students organize their work?"
+    ],
+    "answer": "Create a realistic weekly schedule, prioritize deadlines, divide large tasks into smaller steps, and reserve dedicated time for academics and internship work. Avoid taking on more commitments than you can manage.",
+    "tags": [
+      "time management",
+      "college",
+      "productivity"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "Placements",
+    "question": "How can I prepare for campus placements?",
+    "variations": [
+      "How do I prepare for placements?",
+      "What should I study for campus interviews?",
+      "How can I improve my placement chances?"
+    ],
+    "answer": "Build programming and problem-solving skills, revise core computer science subjects, develop projects, prepare your resume, practice aptitude questions, and participate in mock interviews.",
+    "tags": [
+      "placements",
+      "career",
+      "preparation"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Communication",
+    "question": "How can I improve my communication skills?",
+    "variations": [
+      "How do I communicate better in interviews?",
+      "How can students improve communication?",
+      "How do I speak confidently?",
+      "How can I improve my speaking skills?",
+      "How do I become a better communicator?",
+      "How can I speak more clearly?",
+      "How can I develop confidence while speaking?"
+    ],
+    "answer": "Practice explaining technical concepts in simple language, participate in discussions, read regularly, and take part in mock interviews. Focus on clarity, listening, and confidence rather than memorizing scripts.",
+    "tags": [
+      "communication",
+      "interviews",
+      "soft skills"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Internships",
+    "question": "How can I find remote internships?",
+    "variations": [
+      "Where can I apply for work from home internships?",
+      "How do I get online internships?"
+    ],
+    "answer": "Search trusted internship platforms, company career pages, and professional networks. Filter opportunities by remote work, eligibility, duration, and stipend. Check the requirements before applying.",
+    "tags": [
+      "remote",
+      "internship",
+      "online",
+      "work from home"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "AI Engineering",
+    "question": "What is an AI engineering internship?",
+    "variations": [
+      "What does an AI engineering intern do?",
+      "What kind of work is involved in an AI internship?",
+      "What is an internship in artificial intelligence?",
+      "What practical experience does an AI intern gain?"
+    ],
+    "answer": "An AI engineering internship gives students practical experience in developing AI-powered applications, working with machine learning models, processing data, and integrating AI technologies into real-world projects",
+    "tags": [
+      "AI",
+      "artificial intelligence",
+      "machine learning"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Preparation",
+    "question": "How can I prepare for an AI engineering internship?",
+    "variations": [
+      "Which libraries should I learn for AI?",
+      "What Python tools are useful for machine learning?",
+      "How do I get ready for an AI internship?",
+      "What should I learn before starting an AI internship?"
+    ],
+    "answer": "Learn Python programming, understand basic machine learning concepts, practice working with datasets, explore libraries such as NumPy and scikit-learn, and build small AI projects. Maintain your projects on GitHub.",
+    "tags": [
+      "AI",
+      "Python",
+      "preparation",
+      "machine learning"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Projects",
+    "question": "What should a project README file contain?",
+    "variations": [
+      "What should I include in my GitHub README?",
+      "How do I document my project on GitHub?",
+      "What information should project documentation include?",
+      "How should I write documentation for my project?"
+    ],
+    "answer": "A good README should explain the project's purpose, features, technologies used, installation steps, usage instructions, screenshots, and contribution details. Keep the documentation clear and up to date.",
+    "tags": [
+      "README",
+      "GitHub",
+      "documentation",
+      "projects"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Applications",
+    "question": "How can I identify fake internship opportunities?",
+    "variations": [
+      "How can I spot internship scams?",
+      "How do I know if an internship offer is genuine?",
+      "How can I check whether an internship is fake?",
+      "How do I avoid fraudulent internship offers?"
+    ],
+    "answer": "Verify the organization's official website, check the recruiter's identity, review the internship description, and look for genuine company contact details. Be cautious of opportunities demanding registration fees or sensitive personal information.",
+    "tags": [
+      "safety",
+      "fake internships",
+      "applications",
+      "scams"
+    ]
+  }
+]

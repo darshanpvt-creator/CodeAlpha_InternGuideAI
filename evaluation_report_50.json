@@ -1,0 +1,421 @@
+{
+    "total_tests": 51,
+    "correct_predictions": 51,
+    "failed_predictions": 0,
+    "overall_accuracy_percent": 100.0,
+    "faq_matching_rate_percent": 100.0,
+    "unrelated_query_rejection_percent": 100.0,
+    "average_confidence": 0.6422,
+    "positive_tests": 45,
+    "negative_tests": 6,
+    "results": [
+        {
+            "test_number": 1,
+            "question": "What is an internship?",
+            "expected_category": "Internships",
+            "actual_category": "Internships",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 2,
+            "question": "Why should I do an internship?",
+            "expected_category": "Internships",
+            "actual_category": "Internships",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 3,
+            "question": "What work do interns perform?",
+            "expected_category": "Internships",
+            "actual_category": "Internships",
+            "confidence": 0.528,
+            "passed": true
+        },
+        {
+            "test_number": 4,
+            "question": "Can undergraduate students apply?",
+            "expected_category": "Eligibility",
+            "actual_category": "Eligibility",
+            "confidence": 0.7297,
+            "passed": true
+        },
+        {
+            "test_number": 5,
+            "question": "Am I eligible for an internship?",
+            "expected_category": "Eligibility",
+            "actual_category": "Eligibility",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 6,
+            "question": "Where do I search for internship opportunities?",
+            "expected_category": "Applications",
+            "actual_category": "Applications",
+            "confidence": 0.7222,
+            "passed": true
+        },
+        {
+            "test_number": 7,
+            "question": "How do I get an internship?",
+            "expected_category": "Applications",
+            "actual_category": "Applications",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 8,
+            "question": "How can I find work from home internships?",
+            "expected_category": "Internships",
+            "actual_category": "Internships",
+            "confidence": 0.7551,
+            "passed": true
+        },
+        {
+            "test_number": 9,
+            "question": "What should my CV contain?",
+            "expected_category": "Resume",
+            "actual_category": "Resume",
+            "confidence": 0.3455,
+            "passed": true
+        },
+        {
+            "test_number": 10,
+            "question": "How can I make a good student resume?",
+            "expected_category": "Resume",
+            "actual_category": "Resume",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 11,
+            "question": "Which programming skills should I learn?",
+            "expected_category": "Skills",
+            "actual_category": "Skills",
+            "confidence": 0.4765,
+            "passed": true
+        },
+        {
+            "test_number": 12,
+            "question": "What should a computer science student study?",
+            "expected_category": "Skills",
+            "actual_category": "Skills",
+            "confidence": 0.6427,
+            "passed": true
+        },
+        {
+            "test_number": 13,
+            "question": "Why should I build projects?",
+            "expected_category": "Projects",
+            "actual_category": "Projects",
+            "confidence": 0.7836,
+            "passed": true
+        },
+        {
+            "test_number": 14,
+            "question": "Do projects help in getting internships?",
+            "expected_category": "Projects",
+            "actual_category": "Projects",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 15,
+            "question": "How do I showcase my coding work?",
+            "expected_category": "GitHub",
+            "actual_category": "GitHub",
+            "confidence": 0.7457,
+            "passed": true
+        },
+        {
+            "test_number": 16,
+            "question": "Where should I upload my source code?",
+            "expected_category": "GitHub",
+            "actual_category": "GitHub",
+            "confidence": 0.4815,
+            "passed": true
+        },
+        {
+            "test_number": 17,
+            "question": "How do I prepare for coding interviews?",
+            "expected_category": "Interview Preparation",
+            "actual_category": "Interview Preparation",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 18,
+            "question": "What topics should I revise before an interview?",
+            "expected_category": "Interview Preparation",
+            "actual_category": "Interview Preparation",
+            "confidence": 0.4996,
+            "passed": true
+        },
+        {
+            "test_number": 19,
+            "question": "Are course completion certificates valuable?",
+            "expected_category": "Certificates",
+            "actual_category": "Certificates",
+            "confidence": 0.7955,
+            "passed": true
+        },
+        {
+            "test_number": 20,
+            "question": "Do online courses help students?",
+            "expected_category": "Certificates",
+            "actual_category": "Certificates",
+            "confidence": 0.6396,
+            "passed": true
+        },
+        {
+            "test_number": 21,
+            "question": "How do I become a software engineer?",
+            "expected_category": "Career Guidance",
+            "actual_category": "Career Guidance",
+            "confidence": 0.5956,
+            "passed": true
+        },
+        {
+            "test_number": 22,
+            "question": "Give me a software developer roadmap.",
+            "expected_category": "Career Guidance",
+            "actual_category": "Career Guidance",
+            "confidence": 0.6619,
+            "passed": true
+        },
+        {
+            "test_number": 23,
+            "question": "What files are needed for project submission?",
+            "expected_category": "Submissions",
+            "actual_category": "Submissions",
+            "confidence": 0.6224,
+            "passed": true
+        },
+        {
+            "test_number": 24,
+            "question": "How do I share my completed internship project?",
+            "expected_category": "Submissions",
+            "actual_category": "Submissions",
+            "confidence": 0.6519,
+            "passed": true
+        },
+        {
+            "test_number": 25,
+            "question": "How can I perform well during an internship?",
+            "expected_category": "Internship Experience",
+            "actual_category": "Internship Experience",
+            "confidence": 0.7844,
+            "passed": true
+        },
+        {
+            "test_number": 26,
+            "question": "What are my responsibilities as an intern?",
+            "expected_category": "Internship Experience",
+            "actual_category": "Internship Experience",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 27,
+            "question": "How do I manage college and internship together?",
+            "expected_category": "Productivity",
+            "actual_category": "Productivity",
+            "confidence": 0.5061,
+            "passed": true
+        },
+        {
+            "test_number": 28,
+            "question": "How can I manage my study time?",
+            "expected_category": "Productivity",
+            "actual_category": "Productivity",
+            "confidence": 0.6965,
+            "passed": true
+        },
+        {
+            "test_number": 29,
+            "question": "How do I prepare for campus interviews?",
+            "expected_category": "Placements",
+            "actual_category": "Placements",
+            "confidence": 0.5985,
+            "passed": true
+        },
+        {
+            "test_number": 30,
+            "question": "What should I practice for placements?",
+            "expected_category": "Placements",
+            "actual_category": "Placements",
+            "confidence": 0.3692,
+            "passed": true
+        },
+        {
+            "test_number": 31,
+            "question": "How can I speak confidently?",
+            "expected_category": "Communication",
+            "actual_category": "Communication",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 32,
+            "question": "How do I improve my speaking skills?",
+            "expected_category": "Communication",
+            "actual_category": "Communication",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 33,
+            "question": "What is an artificial intelligence internship?",
+            "expected_category": "AI Engineering",
+            "actual_category": "AI Engineering",
+            "confidence": 0.8722,
+            "passed": true
+        },
+        {
+            "test_number": 34,
+            "question": "What do AI engineering interns do?",
+            "expected_category": "AI Engineering",
+            "actual_category": "AI Engineering",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 35,
+            "question": "How should I prepare for an AI internship?",
+            "expected_category": "Preparation",
+            "actual_category": "Preparation",
+            "confidence": 0.6107,
+            "passed": true
+        },
+        {
+            "test_number": 36,
+            "question": "Which Python libraries should I learn for machine learning?",
+            "expected_category": "Preparation",
+            "actual_category": "Preparation",
+            "confidence": 0.5698,
+            "passed": true
+        },
+        {
+            "test_number": 37,
+            "question": "What should I write in my GitHub README?",
+            "expected_category": "Projects",
+            "actual_category": "Projects",
+            "confidence": 0.6438,
+            "passed": true
+        },
+        {
+            "test_number": 38,
+            "question": "What sections belong in project documentation?",
+            "expected_category": "Projects",
+            "actual_category": "Projects",
+            "confidence": 0.594,
+            "passed": true
+        },
+        {
+            "test_number": 39,
+            "question": "How do I recognize internship scams?",
+            "expected_category": "Applications",
+            "actual_category": "Applications",
+            "confidence": 0.7222,
+            "passed": true
+        },
+        {
+            "test_number": 40,
+            "question": "Should I pay money to get an internship?",
+            "expected_category": "Applications",
+            "actual_category": "Applications",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 41,
+            "question": "internship",
+            "expected_category": "Internships",
+            "actual_category": "Internships",
+            "confidence": 1.0,
+            "passed": true
+        },
+        {
+            "test_number": 42,
+            "question": "resume",
+            "expected_category": "Resume",
+            "actual_category": "Resume",
+            "confidence": 0.5671,
+            "passed": true
+        },
+        {
+            "test_number": 43,
+            "question": "GitHub portfolio",
+            "expected_category": "GitHub",
+            "actual_category": "GitHub",
+            "confidence": 0.3362,
+            "passed": true
+        },
+        {
+            "test_number": 44,
+            "question": "AI internship preparation",
+            "expected_category": "Preparation",
+            "actual_category": "Preparation",
+            "confidence": 0.4567,
+            "passed": true
+        },
+        {
+            "test_number": 45,
+            "question": "placement preparation",
+            "expected_category": "Placements",
+            "actual_category": "Placements",
+            "confidence": 0.7502,
+            "passed": true
+        },
+        {
+            "test_number": 46,
+            "question": "What is the weather on Mars?",
+            "expected_category": null,
+            "actual_category": null,
+            "confidence": 0.0,
+            "passed": true
+        },
+        {
+            "test_number": 47,
+            "question": "Who won yesterday's football match?",
+            "expected_category": null,
+            "actual_category": null,
+            "confidence": 0.0,
+            "passed": true
+        },
+        {
+            "test_number": 48,
+            "question": "Tell me a joke about animals.",
+            "expected_category": null,
+            "actual_category": null,
+            "confidence": 0.0,
+            "passed": true
+        },
+        {
+            "test_number": 49,
+            "question": "What is the capital of Japan?",
+            "expected_category": null,
+            "actual_category": null,
+            "confidence": 0.0,
+            "passed": true
+        },
+        {
+            "test_number": 50,
+            "question": "How do I bake a chocolate cake?",
+            "expected_category": null,
+            "actual_category": null,
+            "confidence": 0.0,
+            "passed": true
+        },
+        {
+            "test_number": 51,
+            "question": "Explain quantum physics.",
+            "expected_category": null,
+            "actual_category": null,
+            "confidence": 0.0,
+            "passed": true
+        }
+    ]
+}

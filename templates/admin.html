@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+    <title>InternGuide AI | Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">IG</div>
+                <div>
+                    <h2>InternGuide <span>AI</span></h2>
+                    <p>ADMINISTRATION</p>
+                </div>
+            </div>
+
+            <nav>
+                <a class="nav-link active" href="/admin">▦ Dashboard</a>
+                <a class="nav-link" href="/">✦ Chatbot</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <span class="status-dot"></span>
+                System monitoring
+                <p>InternGuide AI Analytics</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">OVERVIEW</p>
+                    <h1>Admin Dashboard</h1>
+                    <p class="subtitle">Monitor chatbot performance and user activity.</p>
+                </div>
+                <button id="refreshButton" class="refresh-button">↻ Refresh data</button>
+            </header>
+
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <p>Total conversations</p>
+                    <h2 id="totalConversations">--</h2>
+                    <span>Recorded sessions</span>
+                </article>
+
+                <article class="stat-card">
+                    <p>Total messages</p>
+                    <h2 id="totalMessages">--</h2>
+                    <span>User and AI messages</span>
+                </article>
+
+                <article class="stat-card">
+                    <p>Unanswered questions</p>
+                    <h2 id="totalUnanswered">--</h2>
+                    <span>Questions needing attention</span>
+                </article>
+
+                <article class="stat-card">
+                    <p>Helpful rate</p>
+                    <h2 id="helpfulRate">--</h2>
+                    <span>Based on user feedback</span>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <article class="panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>User feedback</h2>
+                            <p>Feedback submitted on AI responses</p>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="feedbackChart"></canvas>
+                    </div>
+                    <div class="feedback-summary">
+                        <span>Helpful: <strong id="helpfulCount">0</strong></span>
+                        <span>Not helpful: <strong id="notHelpfulCount">0</strong></span>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Frequently asked questions</h2>
+                            <p>Most repeated user queries</p>
+                        </div>
+                    </div>
+                    <div id="topQuestions" class="question-list">
+                        <p class="loading">Loading questions...</p>
+                    </div>
+                </article>
+                <article class="panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Unanswered Questions</h2>
+                            <p>Questions that need new FAQ entries</p>
+                        </div>
+                        <span id="unansweredTotal" class="question-count">0</span>
+                    </div>
+                    <div id="unansweredQuestions" class="question-list">
+                        <p class="loading">Loading unanswered questions...</p>
+                    </div>
+                </article>
+                <article class="panel faq-management">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Add a New FAQ</h2>
+                            <p>Create a new answer for the chatbot</p>
+                        </div>
+                    </div>
+
+                    <form id="faqForm" class="faq-form">
+                        <label for="faqCategory">Category</label>
+                        <input id="faqCategory" type="text" placeholder="e.g. Internships" required>
+
+                        <label for="faqQuestion">Question</label>
+                        <input id="faqQuestion" type="text" placeholder="Enter the FAQ question" required>
+
+                        <label for="faqVariations">Alternative questions</label>
+                        <textarea id="faqVariations" rows="3" placeholder="Enter alternatives separated by commas"></textarea>
+
+                        <label for="faqAnswer">Answer</label>
+                        <textarea id="faqAnswer" rows="5" placeholder="Enter the chatbot answer" required>
+
+                        </textarea>
+
+                        <label for="faqTags">Tags</label>
+                        <input id="faqTags" type="text" placeholder="e.g. internship, career, students">
+
+                        <button type="submit" class="refresh-button">Add FAQ</button>
+                        <p id="faqFormMessage" role="status"></p>
+                    </form>
+                </article>
+            <article class="panel faq-list-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Manage Existing FAQs</h2>
+                            <p>View and remove outdated FAQ entries</p>
+                        </div>
+                        <span id="faqListTotal" class="question-count">0</span>
+                    </div>
+                    <div id="faqList" class="faq-list">
+                        <p class="loading">Loading FAQs...</p>
+                    </div>
+                </article>
+            </section>
+            <footer class="footer">
+                InternGuide AI · Admin Analytics
+                <span id="lastUpdated">Waiting for data...</span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+

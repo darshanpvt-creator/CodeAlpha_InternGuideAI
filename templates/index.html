@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+    <title>InternGuide AI | Your Internship Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-shell">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">IG</div>
+                <div>
+                    <h2>InternGuide <span>AI</span></h2>
+                    <p>YOUR CAREER COMPANION</p>
+                </div>
+            </div>
+
+            <button class="new-chat" id="newChatButton">
+                <span>＋</span> New conversation
+            </button>
+
+            <div class="history-section">
+                <p class="section-label">RECENT CONVERSATIONS</p>
+                <div id="historyList" class="history-list">
+                    <p class="history-empty">Loading conversations...</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <p class="section-label">EXPLORE</p>
+                <button class="side-link active" data-question="How can I find an internship?">
+                    <span>⌕</span> Find internships
+                </button>
+                <button class="side-link" data-question="What skills should a CSE student learn?">
+                    <span>◇</span> Career skills
+                </button>
+                <button class="side-link" data-question="How do I prepare for technical interviews?">
+                    <span>▤</span> Interview preparation
+                </button>
+                <button class="side-link" data-question="How can I improve my resume?">
+                    <span>▧</span> Resume guidance
+                </button>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    AI assistant available
+                </div>
+                <p>Built to help students move forward.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="topbar-label">STUDENT SUPPORT</p>
+                    <h3>Internship Assistant</h3>
+                </div>
+                <div class="online-status">
+                    <span class="status-dot"></span> Online
+                </div>
+            </header>
+
+            <section class="chat-area" id="chatArea">
+                <div class="welcome-section" id="welcomeSection">
+                    <div class="welcome-icon">✦</div>
+                    <p class="eyebrow">WELCOME TO INTERNGUIDE AI</p>
+                    <h1>Your next opportunity<br>starts with a <span>question.</span></h1>
+                    <p class="welcome-description">
+                        Get practical guidance on internships, skills, projects,
+                        resumes and career preparation.
+                    </p>
+
+                    <div class="suggestion-heading">TRY ASKING</div>
+
+                    <div class="suggestion-grid">
+                        <button class="suggestion-card" data-question="How can I find an internship?">
+                            <span>01</span>
+                            <strong>Finding internships</strong>
+                            <small>Discover ways to get started</small>
+                            <b>↗</b>
+                        </button>
+
+                        <button class="suggestion-card" data-question="What programming skills should CSE students learn?">
+                            <span>02</span>
+                            <strong>Essential skills</strong>
+                            <small>Build a strong technical foundation</small>
+                            <b>↗</b>
+                        </button>
+
+                        <button class="suggestion-card" data-question="How can I prepare for technical interviews?">
+                            <span>03</span>
+                            <strong>Interview preparation</strong>
+                            <small>Prepare with confidence</small>
+                            <b>↗</b>
+                        </button>
+
+                        <button class="suggestion-card" data-question="How can I improve my resume?">
+                            <span>04</span>
+                            <strong>Resume improvement</strong>
+                            <small>Present your skills effectively</small>
+                            <b>↗</b>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="messages" id="messages"></div>
+            </section>
+
+            <footer class="composer-area">
+                <div class="composer" id="composer">
+                    <textarea
+                        id="questionInput"
+                        rows="1"
+                        maxlength="500"
+                        placeholder="Ask anything about internships, skills or careers..."
+                        aria-label="Your question"
+                    ></textarea>
+                    <button id="sendButton" aria-label="Send message">↑</button>
+                </div>
+                <p class="disclaimer">
+                    InternGuide AI uses FAQ-based matching. Always verify important information.
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
