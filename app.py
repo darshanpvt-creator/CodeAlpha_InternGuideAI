@@ -306,19 +306,19 @@ def admin_stats():
     try:
         with get_connection() as connection:
             total_conversations = connection.execute(
-                "SELECT COUNT(*) FROM conversations"
-            ).fetchone()[0]
+                "SELECT COUNT(*) AS total FROM conversations"
+            ).fetchone()["total"]
 
             total_messages = connection.execute(
-                "SELECT COUNT(*) FROM messages"
-            ).fetchone()[0]
+                "SELECT COUNT(*) AS total FROM messages"
+            ).fetchone()["total"]
 
             total_unanswered = connection.execute(
-                "SELECT COUNT(*) FROM unanswered_questions"
-            ).fetchone()[0]
+                "SELECT COUNT(*) AS total FROM unanswered_questions"
+            ).fetchone()["total"]
 
             feedback_counts = connection.execute("""
-                SELECT rating, COUNT(*)
+                SELECT rating, COUNT(*) AS total
                 FROM feedback
                 GROUP BY rating
             """).fetchall()
@@ -328,8 +328,8 @@ def admin_stats():
                 "not_helpful": 0
             }
 
-            for rating, count in feedback_counts:
-                feedback[rating] = count
+            for row in feedback_counts:
+                feedback[row["rating"]] = row["total"]
 
             total_feedback = feedback["helpful"] + feedback["not_helpful"]
 
@@ -367,7 +367,6 @@ def admin_stats():
         return jsonify({
             "error": "Unable to retrieve admin statistics."
         }), 500
-
 
 @app.route("/admin")
 @admin_required

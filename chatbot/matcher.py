@@ -53,7 +53,7 @@ class FAQMatcher:
             "developer", "engineer", "engineering", "artificial",
             "intelligence", "machine", "learning", "python",
             "java", "technology", "technical", "recruiter",
-            "portfolio", "remote", "application", "communication",
+            "portfolio", "remote", "application", "experience", "communication",
             "documentation", "readme", "scam", "professional",
             "study", "time", "speak", "speaking", "confident",
             "confidence", "presentation", "communication"
