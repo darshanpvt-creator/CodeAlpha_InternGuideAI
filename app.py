@@ -19,6 +19,13 @@ from database.db import (
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+
+app.logger.warning(
+    "AUTH DIAGNOSTIC: SECRET_KEY loaded=%s | ADMIN_PASSWORD loaded=%s",
+    bool(os.environ.get("SECRET_KEY")),
+    bool(os.environ.get("ADMIN_PASSWORD"))
+)
+
 app.config["SESSION_COOKIE_HTTPONLY"] = True
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 app.config["SESSION_COOKIE_SECURE"] = os.environ.get(
