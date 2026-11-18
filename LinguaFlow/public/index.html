@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10172b">
+<meta name="description" content="LinguaFlow - a multilingual language translation tool.">
+<title>LinguaFlow | Language Translator</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root{--bg:#0b1020;--panel:#141e34;--line:#293b5c;--muted:#9aabc9;--text:#f3f6ff;--blue:#548cff;--purple:#8065ed}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 10% 0%,#1b3260 0,transparent 38%),radial-gradient(ellipse at 90% 30%,#30235b 0,transparent 35%),var(--bg);font-family:'DM Sans',sans-serif;color:var(--text)}
+button,select,textarea{font:inherit}
+.wrap{max-width:1100px;margin:auto;padding:28px 22px 50px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0 30px}
+.brand{font-size:21px;font-weight:800;letter-spacing:-.6px}
+.brand span{color:#8db1ff}
+.navtag{font-size:12px;color:#a9c2ff;border:1px solid #344d7c;background:#172746;padding:8px 13px;border-radius:30px}
+.hero{text-align:center;padding:24px 0 30px}
+.eyebrow{font-size:11px;letter-spacing:1.8px;color:#9dbaff;font-weight:800}
+h1{font-size:clamp(42px,7vw,68px);letter-spacing:-3px;margin:12px 0 8px}
+h1 span{color:#84aaff}
+.hero p{color:var(--muted);font-size:16px;margin:0}
+.card{background:rgba(20,30,52,.91);border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:0 20px 60px #0003}
+.section{font-size:11px;letter-spacing:1.5px;color:#9dbaff;font-weight:800;margin-bottom:13px}
+.languages{display:grid;grid-template-columns:1fr 54px 1fr;gap:12px;align-items:end}
+label{display:block;font-size:13px;color:#c1cde3;font-weight:600;margin-bottom:9px}
+select,textarea{width:100%;background:#0e182c;color:var(--text);border:1px solid #3a4e72;border-radius:12px;padding:14px;outline:none}
+select:focus,textarea:focus{border-color:#80a9ff;box-shadow:0 0 0 3px #548cff22}
+.swap{height:49px;border:1px solid #3a4e72;background:#1b2944;color:#dce7ff;border-radius:12px;font-size:22px;cursor:pointer}
+.swap:hover{background:#293d65}
+.editorgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+textarea{resize:vertical;min-height:205px;line-height:1.7;font-size:15px}
+textarea::placeholder{color:#7183a5}
+.meta{display:flex;justify-content:space-between;color:#8294b5;font-size:12px;margin-top:8px}
+.primary{margin-top:20px;width:100%;border:0;border-radius:12px;padding:15px;background:linear-gradient(110deg,#3978e8,#725ce0);color:white;font-weight:800;cursor:pointer;font-size:15px;box-shadow:0 8px 25px #386de333}
+.primary:hover{filter:brightness(1.1)}
+.primary:disabled{opacity:.6;cursor:wait}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}
+.secondary{background:#1b2944;border:1px solid #40577e;color:#dce7ff;border-radius:10px;padding:10px 14px;cursor:pointer;font-size:13px;font-weight:700}
+.secondary:hover{background:#293d65}
+.status{margin-top:16px;padding:12px 14px;border-radius:11px;font-size:13px;display:none;line-height:1.6}
+.status.show{display:block}
+.status.error{background:#48232d;color:#ffd5db;border:1px solid #844452}
+.status.success{background:#183b35;color:#c3ffea;border:1px solid #327767}
+.resultbox{min-height:205px;background:#0e182c;border:1px solid #344a70;border-radius:12px;padding:15px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75;color:#f3f6ff}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:23px}
+.feature{border:1px solid var(--line);background:#121d33;border-radius:15px;padding:17px}
+.feature strong{font-size:14px}.feature p{font-size:12px;color:var(--muted);line-height:1.6;margin:7px 0 0}
+.history{margin-top:20px}
+.history details{background:#121d33;border:1px solid var(--line);border-radius:13px;padding:14px}
+.history summary{cursor:pointer;font-weight:700;font-size:13px}
+.historyitem{border-bottom:1px solid var(--line);padding:12px 0;font-size:13px;color:#dbe5fa}
+footer{text-align:center;color:#7486a8;font-size:12px;padding:32px 0 5px}
+@media(max-width:700px){.wrap{padding:15px}.card{padding:17px}.languages{grid-template-columns:1fr 42px 1fr;gap:7px}.editorgrid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.hero{padding:18px 0 24px}.navtag{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="brand">🌐 Lingua<span>Flow</span></div><div class="navtag">CODEALPHA PROJECT</div></nav>
+<header class="hero">
+<div class="eyebrow">SMART MULTILINGUAL TRANSLATION</div>
+<h1>Words connect.<br><span>LinguaFlow translates.</span></h1>
+<p>Translate your thoughts and communicate across languages.</p>
+</header>
+
+<main class="card">
+<div class="section">01 / CHOOSE LANGUAGES</div>
+<div class="languages">
+<div><label for="source">Translate from</label><select id="source"></select></div>
+<button class="swap" id="swap" title="Swap languages">⇄</button>
+<div><label for="target">Translate to</label><select id="target"></select></div>
+</div>
+
+<div class="editorgrid">
+<div>
+<div class="section" style="margin-top:24px">02 / YOUR TEXT</div>
+<textarea id="input" maxlength="12000" placeholder="Type or paste your text here..."></textarea>
+<div class="meta"><span id="count">0 characters</span><button class="secondary" id="clear">Clear text</button></div>
+</div>
+<div>
+<div class="section" style="margin-top:24px">03 / TRANSLATION</div>
+<div class="resultbox" id="output" aria-live="polite">Your translation will appear here.</div>
+<div class="meta"><span id="provider">Waiting for text</span><span id="parts"></span></div>
+</div>
+</div>
+
+<button class="primary" id="translate">✦ &nbsp; Translate text</button>
+<div class="status" id="status" role="status"></div>
+<div class="actions">
+<button class="secondary" id="copy">Copy translation</button>
+<button class="secondary" id="download">Download .txt</button>
+<button class="secondary" id="listen">Listen</button>
+</div>
+</main>
+
+<div class="features">
+<div class="feature"><strong>🌍 Multiple languages</strong><p>Includes popular global languages and Indian languages.</p></div>
+<div class="feature"><strong>🔄 Service fallback</strong><p>Attempts alternative public translation providers when needed.</p></div>
+<div class="feature"><strong>📝 Longer text</strong><p>Splits long input into smaller requests to handle service limits.</p></div>
+</div>
+
+<div class="history"><details><summary>🕘 Recent translations</summary><div id="history"></div></details></div>
+<footer>LinguaFlow · CodeAlpha Language Translation Tool<br>Built for communication without language barriers.</footer>
+</div>
+
+<script>
+const languages = {
+"Auto detect":"auto","English":"en","Tamil":"ta","Hindi":"hi","Telugu":"te",
+"Malayalam":"ml","Kannada":"kn","Bengali":"bn","Marathi":"mr","Gujarati":"gu",
+"Punjabi":"pa","Urdu":"ur","French":"fr","German":"de","Spanish":"es",
+"Italian":"it","Portuguese":"pt","Japanese":"ja","Korean":"ko",
+"Chinese (Simplified)":"zh","Arabic":"ar","Russian":"ru","Dutch":"nl"
+};
+
+const $ = id => document.getElementById(id);
+const source = $("source"), target = $("target");
+Object.entries(languages).forEach(([name,code])=>{
+  source.add(new Option(name,code));
+  if(code!=="auto") target.add(new Option(name,code));
+});
+source.value="en";target.value="ta";
+
+let translatedText="";
+let historyItems=[];
+
+$("input").addEventListener("input",()=>{
+  $("count").textContent=$("input").value.length+" characters";
+});
+
+function showStatus(message,type){
+  const box=$("status");
+  box.textContent=message;
+  box.className="status show "+type;
+}
+function setBusy(busy){
+  $("translate").disabled=busy;
+  $("translate").textContent=busy?"Translating... please wait":"✦  Translate text";
+}
+$("swap").onclick=()=>{
+  if(source.value==="auto") return;
+  const old=source.value;source.value=target.value;target.value=old;
+};
+$("clear").onclick=()=>{
+  $("input").value="";
+  $("count").textContent="0 characters";
+  $("output").textContent="Your translation will appear here.";
+  $("provider").textContent="Waiting for text";
+  $("parts").textContent="";
+  translatedText="";
+  $("status").className="status";
+};
+$("translate").onclick=async()=>{
+  const text=$("input").value.trim();
+  if(!text){showStatus("Please enter text to translate.","error");return;}
+  if(source.value===target.value){showStatus("Choose two different languages.","error");return;}
+
+  translatedText="";
+  $("output").textContent="Translating your text...";
+  $("provider").textContent="Contacting translation services";
+  $("parts").textContent="";
+  setBusy(true);
+
+  try{
+    const response=await fetch("/.netlify/functions/translate",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({text,source:source.value,target:target.value})
+    });
+    const data=await response.json();
+    if(!response.ok) throw new Error(data.error+(data.details?" — "+data.details:""));
+    if(!data.translation) throw new Error("The translation service returned no translated text.");
+
+    translatedText=data.translation;
+    $("output").textContent=translatedText;
+    $("provider").textContent="Service: "+data.providers.join(", ");
+    $("parts").textContent=data.parts+" section(s)";
+    showStatus("Translation completed successfully.","success");
+
+    historyItems.unshift({from:source.options[source.selectedIndex].text,to:target.options[target.selectedIndex].text,text:translatedText});
+    historyItems=historyItems.slice(0,8);
+    $("history").innerHTML="";
+    historyItems.forEach(item=>{
+      const div=document.createElement("div");
+      div.className="historyitem";
+      const strong=document.createElement("strong");
+      strong.textContent=item.from+" → "+item.to;
+      const p=document.createElement("p");
+      p.textContent=item.text;
+      div.append(strong,p);
+      $("history").append(div);
+    });
+  }catch(error){
+    $("output").textContent="Translation unavailable.";
+    $("provider").textContent="No provider completed the request";
+    showStatus(error.message+" Please try again later or choose another source language.","error");
+  }finally{setBusy(false);}
+};
+
+$("copy").onclick=async()=>{
+  if(!translatedText){showStatus("Translate some text before copying.","error");return;}
+  try{
+    await navigator.clipboard.writeText(translatedText);
+    showStatus("Translation copied to clipboard.","success");
+  }catch{
+    showStatus("Clipboard access is unavailable in this browser.","error");
+  }
+};
+$("download").onclick=()=>{
+  if(!translatedText){showStatus("Translate some text before downloading.","error");return;}
+  const blob=new Blob([translatedText],{type:"text/plain;charset=utf-8"});
+  const link=document.createElement("a");
+  link.href=URL.createObjectURL(blob);
+  link.download="linguaflow-translation.txt";
+  link.click();
+  URL.revokeObjectURL(link.href);
+};
+$("listen").onclick=()=>{
+  if(!translatedText){showStatus("Translate some text before listening.","error");return;}
+  if(!("speechSynthesis" in window)){showStatus("Speech is not supported by this browser.","error");return;}
+  const utterance=new SpeechSynthesisUtterance(translatedText);
+  const code=target.value;
+  utterance.lang=({zh:"zh-CN",pt:"pt-PT"}[code]||code);
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
+};
+</script>
+</body>
+</html>

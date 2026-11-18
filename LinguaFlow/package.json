@@ -1,0 +1,12 @@
+{
+  "name": "linguaflow-codealpha",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LinguaFlow - Language Translator",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^23.0.0"
+  }
+}
