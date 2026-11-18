@@ -1,4 +1,0 @@
-﻿streamlit>=1.40
-requests>=2.31
-deep-translator>=1.11.4
-gTTS>=2.5
